@@ -140,3 +140,9 @@ $(document).ready(function () {
 
 
 })
+
+  // select all checkboxes
+  
+  $(".selectall").click(function(){
+    $(".individual").prop("checked",$(this).prop("checked"));
+    });

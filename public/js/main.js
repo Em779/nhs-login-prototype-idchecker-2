@@ -124,4 +124,8 @@ $(document).ready(function () {
       $(e.target).text("Show the original video");
     }
   });
+}); // select all checkboxes
+
+$(".selectall").click(function () {
+  $(".individual").prop("checked", $(this).prop("checked"));
 });

@@ -51,3 +51,136 @@ strong.govuk-tag {
     font-size: 0.9rem;
   }
 }
+
+
+// holding list tags
+
+.nhsuk-tag {
+  @include nhsuk-font($size: 16, $weight: bold, $line-height: 1);
+  background-color: shade($color_nhsuk-blue, 10%);
+  color: $color_nhsuk-white;
+  display: inline-block;
+  letter-spacing: 1px;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  padding-bottom: nhsuk-spacing(1);
+  padding-left: nhsuk-spacing(2);
+  padding-right: nhsuk-spacing(2);
+  padding-top: nhsuk-spacing(1);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+$color_nhsuk-aqua-green: #00a499;
+$color_nhsuk-pink: #ae2573;
+$color_nhsuk-orange: #ed8b00;
+
+// WHITE
+.nhsuk-tag--white {
+  background-color: $color_nhsuk-white;
+  border: 1px solid $color_nhsuk-black;
+  color: $color_nhsuk-black;
+}
+
+// GREY
+.nhsuk-tag--grey {
+  background-color: tint($color_nhsuk-grey-1, 80%);
+  color: shade($color_nhsuk-grey-1, 30%);
+}
+// GREEN
+.nhsuk-tag--green {
+  background-color: tint($color_nhsuk-green, 80%);
+  color: shade($color_nhsuk-green, 40%);
+}
+// AQUA GREEN
+.nhsuk-tag--aqua-green {
+  background-color: tint($color_nhsuk-aqua-green, 80%);
+  color: shade($color_nhsuk-aqua-green, 50%);
+}
+// BLUE
+.nhsuk-tag--blue {
+  background-color: tint($color_nhsuk-blue, 80%);
+  color: shade($color_nhsuk-blue, 30%);
+}
+// PURPLE
+.nhsuk-tag--purple {
+  background-color: tint($color_nhsuk-purple, 80%);
+  color: shade($color_nhsuk-purple, 30%);
+}
+// PINK
+.nhsuk-tag--pink {
+  background-color: tint($color_nhsuk-pink, 80%);
+  color: shade($color_nhsuk-pink, 50%);
+}
+// RED
+.nhsuk-tag--red {
+  background-color: tint($color_nhsuk-red, 80%);
+  color: shade($color_nhsuk-red, 50%);
+}
+// ORANGE
+.nhsuk-tag--orange {
+  background-color: tint($color_nhsuk-warm-yellow, 50%);
+  color: shade($color_nhsuk-warm-yellow, 70%);
+}
+// YELLOW
+.nhsuk-tag--yellow {
+  background-color: tint($color_nhsuk-yellow, 50%);
+  color: shade($color_nhsuk-yellow, 70%);
+}
+
+// smaller button
+.nhsuk-button--ers{
+  @extend .nhsuk-button;
+  padding-bottom: nhsuk-spacing(2);
+    padding-left: nhsuk-spacing(3);
+    padding-right: nhsuk-spacing(3);
+    padding-top: nhsuk-spacing(2);
+    //margin-bottom: 0; // style police strikes again nhsuk-u-margin-bottom-0 sorts this out
+  @include nhsuk-font($size: 19, $weight: normal, $line-height: 1);
+}
+
+.nhsuk-button--ers_secondary {
+  @extend .nhsuk-button--ers;
+  background-color: #425563;
+  box-shadow: 0 4px 0 #232e35; }
+  .nhsuk-button--ers_secondary:hover, .nhsuk-button--ers_secondary:focus {
+    background-color: #384854; }
+  .nhsuk-button--ers_secondary.nhsuk-button--ers_disabled {
+    background-color: #425563; }
+
+        
+.nhsuk-button--ers_reverse{
+@extend .nhsuk-button--ers;
+background-color: $color_nhsuk-white;
+border:1px solid  #425563;
+color: #425563;
+box-shadow: 0 4px 0 #425563;
+
+}
+.nhsuk-button--ers_reverse:link{
+  color: green;
+}
+
+.nhsuk-button--ers_reverse:hover, .nhsuk-button--ers_reverse:focus {
+  @extend .nhsuk-button--ers_reverse;
+  color:#425563;
+  background-color: $color_nhsuk-grey-5;
+cursor: pointer;}
+.nhsuk-button--ers_reverse.nhsuk-button--ers_disabled {
+  background-color: #425563;
+cursor: pointer;}
+
+.nhsuk-upload-button-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.nhsuk-upload-button-container input[type=file] {
+  font-size: 5em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}

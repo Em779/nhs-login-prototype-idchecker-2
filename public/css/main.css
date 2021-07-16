@@ -2221,7 +2221,7 @@ b {
  * 3. Use a pseudo element to expand the click target area to include the
  *    button's shadow as well, in case users try to click it.
  */
-.nhsuk-button {
+.nhsuk-button, .nhsuk-button--ers, .nhsuk-button--ers_secondary, .nhsuk-button--ers_reverse, .nhsuk-button--ers_reverse:hover, .nhsuk-button--ers_reverse:focus {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -2247,43 +2247,43 @@ b {
   /* 3 */
   /* 4 */ }
   @media (min-width: 40.0625em) {
-    .nhsuk-button {
+    .nhsuk-button, .nhsuk-button--ers, .nhsuk-button--ers_secondary, .nhsuk-button--ers_reverse, .nhsuk-button--ers_reverse:hover, .nhsuk-button--ers_reverse:focus {
       font-size: 19px;
       font-size: 1.1875rem;
       line-height: 1.47368; } }
   @media print {
-    .nhsuk-button {
+    .nhsuk-button, .nhsuk-button--ers, .nhsuk-button--ers_secondary, .nhsuk-button--ers_reverse, .nhsuk-button--ers_reverse:hover, .nhsuk-button--ers_reverse:focus {
       font-size: 14pt;
       line-height: 1.15; } }
   @media (min-width: 40.0625em) {
-    .nhsuk-button {
+    .nhsuk-button, .nhsuk-button--ers, .nhsuk-button--ers_secondary, .nhsuk-button--ers_reverse, .nhsuk-button--ers_reverse:hover, .nhsuk-button--ers_reverse:focus {
       margin-bottom: 36px; } }
   @media (max-width: 40.0525em) {
-    .nhsuk-button {
+    .nhsuk-button, .nhsuk-button--ers, .nhsuk-button--ers_secondary, .nhsuk-button--ers_reverse, .nhsuk-button--ers_reverse:hover, .nhsuk-button--ers_reverse:focus {
       padding: 8px 16px; } }
-  .nhsuk-button:link, .nhsuk-button:visited, .nhsuk-button:active, .nhsuk-button:hover {
+  .nhsuk-button:link, .nhsuk-button--ers:link, .nhsuk-button--ers_secondary:link, .nhsuk-button--ers_reverse:link, .nhsuk-button:visited, .nhsuk-button--ers:visited, .nhsuk-button--ers_secondary:visited, .nhsuk-button--ers_reverse:visited, .nhsuk-button:active, .nhsuk-button--ers:active, .nhsuk-button--ers_secondary:active, .nhsuk-button--ers_reverse:active, .nhsuk-button:hover, .nhsuk-button--ers:hover, .nhsuk-button--ers_secondary:hover, .nhsuk-button--ers_reverse:hover {
     color: #ffffff;
     text-decoration: none; }
-  .nhsuk-button::-moz-focus-inner {
+  .nhsuk-button::-moz-focus-inner, .nhsuk-button--ers::-moz-focus-inner, .nhsuk-button--ers_secondary::-moz-focus-inner, .nhsuk-button--ers_reverse::-moz-focus-inner, .nhsuk-button--ers_reverse:hover::-moz-focus-inner, .nhsuk-button--ers_reverse:focus::-moz-focus-inner {
     border: 0;
     padding: 0; }
-  .nhsuk-button:hover {
+  .nhsuk-button:hover, .nhsuk-button--ers:hover, .nhsuk-button--ers_secondary:hover, .nhsuk-button--ers_reverse:hover {
     background-color: #00662f; }
-  .nhsuk-button:focus {
+  .nhsuk-button:focus, .nhsuk-button--ers:focus, .nhsuk-button--ers_secondary:focus, .nhsuk-button--ers_reverse:focus {
     background: #ffeb3b;
     box-shadow: 0 4px 0 #212b32;
     color: #212b32;
     outline: 4px solid transparent; }
-    .nhsuk-button:focus:visited {
+    .nhsuk-button:focus:visited, .nhsuk-button--ers:focus:visited, .nhsuk-button--ers_secondary:focus:visited, .nhsuk-button--ers_reverse:focus:visited {
       color: #212b32; }
-      .nhsuk-button:focus:visited:active {
+      .nhsuk-button:focus:visited:active, .nhsuk-button--ers:focus:visited:active, .nhsuk-button--ers_secondary:focus:visited:active, .nhsuk-button--ers_reverse:focus:visited:active {
         color: #ffffff; }
-  .nhsuk-button:active {
+  .nhsuk-button:active, .nhsuk-button--ers:active, .nhsuk-button--ers_secondary:active, .nhsuk-button--ers_reverse:active {
     background: #00401e;
     box-shadow: none;
     color: #ffffff;
     top: 4px; }
-  .nhsuk-button::before {
+  .nhsuk-button::before, .nhsuk-button--ers::before, .nhsuk-button--ers_secondary::before, .nhsuk-button--ers_reverse::before, .nhsuk-button--ers_reverse:hover::before, .nhsuk-button--ers_reverse:focus::before {
     background: transparent;
     bottom: -6px;
     content: '';
@@ -2292,7 +2292,7 @@ b {
     position: absolute;
     right: -2px;
     top: -2px; }
-  .nhsuk-button:active::before {
+  .nhsuk-button:active::before, .nhsuk-button--ers:active::before, .nhsuk-button--ers_secondary:active::before, .nhsuk-button--ers_reverse:active::before {
     top: -6px; }
 
 /**
@@ -2347,23 +2347,47 @@ b {
  */
 .nhsuk-button--disabled,
 .nhsuk-button[disabled="disabled"],
-.nhsuk-button[disabled] {
+.nhsuk-button--ers[disabled="disabled"],
+.nhsuk-button--ers_secondary[disabled="disabled"],
+.nhsuk-button--ers_reverse[disabled="disabled"],
+.nhsuk-button[disabled],
+.nhsuk-button--ers[disabled],
+.nhsuk-button--ers_secondary[disabled],
+.nhsuk-button--ers_reverse[disabled] {
   background-color: #007f3b;
   opacity: 0.5;
   pointer-events: none; }
   .nhsuk-button--disabled:hover,
   .nhsuk-button[disabled="disabled"]:hover,
-  .nhsuk-button[disabled]:hover {
+  .nhsuk-button--ers[disabled="disabled"]:hover,
+  .nhsuk-button--ers_secondary[disabled="disabled"]:hover,
+  .nhsuk-button--ers_reverse[disabled="disabled"]:hover,
+  .nhsuk-button[disabled]:hover,
+  .nhsuk-button--ers[disabled]:hover,
+  .nhsuk-button--ers_secondary[disabled]:hover,
+  .nhsuk-button--ers_reverse[disabled]:hover {
     background-color: #007f3b;
     cursor: default; }
   .nhsuk-button--disabled:focus,
   .nhsuk-button[disabled="disabled"]:focus,
-  .nhsuk-button[disabled]:focus {
+  .nhsuk-button--ers[disabled="disabled"]:focus,
+  .nhsuk-button--ers_secondary[disabled="disabled"]:focus,
+  .nhsuk-button--ers_reverse[disabled="disabled"]:focus,
+  .nhsuk-button[disabled]:focus,
+  .nhsuk-button--ers[disabled]:focus,
+  .nhsuk-button--ers_secondary[disabled]:focus,
+  .nhsuk-button--ers_reverse[disabled]:focus {
     background-color: #007f3b;
     outline: none; }
   .nhsuk-button--disabled:active,
   .nhsuk-button[disabled="disabled"]:active,
-  .nhsuk-button[disabled]:active {
+  .nhsuk-button--ers[disabled="disabled"]:active,
+  .nhsuk-button--ers_secondary[disabled="disabled"]:active,
+  .nhsuk-button--ers_reverse[disabled="disabled"]:active,
+  .nhsuk-button[disabled]:active,
+  .nhsuk-button--ers[disabled]:active,
+  .nhsuk-button--ers_secondary[disabled]:active,
+  .nhsuk-button--ers_reverse[disabled]:active {
     box-shadow: 0 4px 0 #00401e;
     top: 0; }
 
@@ -7149,3 +7173,131 @@ strong.govuk-tag.concept, strong.govuk-tag.in-progress {
   background-color: #007f3b;
   color: #ffffff;
   font-size: 0.9rem; }
+
+.nhsuk-tag {
+  font-weight: 600;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1;
+  background-color: #0055a6;
+  color: #ffffff;
+  display: inline-block;
+  letter-spacing: 1px;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  text-decoration: none;
+  text-transform: uppercase; }
+  @media (min-width: 40.0625em) {
+    .nhsuk-tag {
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1; } }
+  @media print {
+    .nhsuk-tag {
+      font-size: 14pt;
+      line-height: 1; } }
+
+.nhsuk-tag--white {
+  background-color: #ffffff;
+  border: 1px solid #212b32;
+  color: #212b32; }
+
+.nhsuk-tag--grey {
+  background-color: #dbe0e3;
+  color: #354550; }
+
+.nhsuk-tag--green {
+  background-color: #cce5d8;
+  color: #004c23; }
+
+.nhsuk-tag--aqua-green {
+  background-color: #ccedeb;
+  color: #00524d; }
+
+.nhsuk-tag--blue {
+  background-color: #ccdff1;
+  color: #004281; }
+
+.nhsuk-tag--purple {
+  background-color: #d6cce3;
+  color: #240050; }
+
+.nhsuk-tag--pink {
+  background-color: #efd3e3;
+  color: #57133a; }
+
+.nhsuk-tag--red {
+  background-color: #f7d4d1;
+  color: #6b140e; }
+
+.nhsuk-tag--orange {
+  background-color: #ffdc8e;
+  color: #4d3708; }
+
+.nhsuk-tag--yellow {
+  background-color: #fff59d;
+  color: #4d4712; }
+
+.nhsuk-button--ers, .nhsuk-button--ers_secondary, .nhsuk-button--ers_reverse, .nhsuk-button--ers_reverse:hover, .nhsuk-button--ers_reverse:focus {
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1; }
+  @media (min-width: 40.0625em) {
+    .nhsuk-button--ers, .nhsuk-button--ers_secondary, .nhsuk-button--ers_reverse, .nhsuk-button--ers_reverse:hover, .nhsuk-button--ers_reverse:focus {
+      font-size: 19px;
+      font-size: 1.1875rem;
+      line-height: 1; } }
+  @media print {
+    .nhsuk-button--ers, .nhsuk-button--ers_secondary, .nhsuk-button--ers_reverse, .nhsuk-button--ers_reverse:hover, .nhsuk-button--ers_reverse:focus {
+      font-size: 14pt;
+      line-height: 1; } }
+
+.nhsuk-button--ers_secondary {
+  background-color: #425563;
+  box-shadow: 0 4px 0 #232e35; }
+
+.nhsuk-button--ers_secondary:hover, .nhsuk-button--ers_secondary:focus {
+  background-color: #384854; }
+
+.nhsuk-button--ers_secondary.nhsuk-button--ers_disabled {
+  background-color: #425563; }
+
+.nhsuk-button--ers_reverse, .nhsuk-button--ers_reverse:hover, .nhsuk-button--ers_reverse:focus {
+  background-color: #ffffff;
+  border: 1px solid  #425563;
+  color: #425563;
+  box-shadow: 0 4px 0 #425563; }
+
+.nhsuk-button--ers_reverse:link {
+  color: green; }
+
+.nhsuk-button--ers_reverse:hover, .nhsuk-button--ers_reverse:focus {
+  color: #425563;
+  background-color: #f0f4f5;
+  cursor: pointer; }
+
+.nhsuk-button--ers_reverse.nhsuk-button--ers_disabled {
+  background-color: #425563;
+  cursor: pointer; }
+
+.nhsuk-upload-button-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block; }
+
+.nhsuk-upload-button-container input[type=file] {
+  font-size: 5em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer; }

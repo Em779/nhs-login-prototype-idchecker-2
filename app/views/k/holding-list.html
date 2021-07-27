@@ -8,16 +8,27 @@
 
 <h1 class="nhsuk-heading-l">Holding list</h1>
 
+<div id="slideout-sendback" data-status="closed">
+    <img src="/images/sendtomain.png" alt="Feedback" height="173" width="32" id="slideout-sendback__button"/>
+    <div id="slideout-sendback_inner" data-status="closed">
+        <form action="holding" method="POST" role="form">
+            <h3>Send to main queue</h3>
+            <label class="" for="field6">Reason for moving (required)</label>
+            <textarea class="" id="field6" name="field6" type="text" rows="3" style="margin-top: 16px;" onkeyup='checkText(this.value);'></textarea>
+            <button class="nhsuk-button nhsuk-button--reverse btn btn-primary pull-right delete_all nhsuk-button nhsuk-button--ers class" id="id-holding">Move</button>
+        </form>
+    </div>
+</div>
+
+
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
 
-<a type="button" class="btn btn-primary pull-right delete_all nhsuk-button nhsuk-button--ers class">Send to main queue</a>
 
-     <select class="nhsuk-select" id="select-1" name="select-1" style="margin-top: 0px;margin-left: 419px"">
+     <select class="nhsuk-select" id="select-1" name="select-1" style="margin-top: 0px; ">
     <option value="1">Potential fraud</option>
     <option value="2">Potential safeguarding</option>
     <option value="3">No document example</option>
-@ -154,217 +27,126 @@
     <option value="11">Automation issue</option>
     <option value="12">Other</option>
   </select>
@@ -45,11 +56,11 @@
 
 </div>
          <th>Verification ID</th>
-         <th>User</th>
          <th>Reason</th>
          <th>Description</th>
          <th>Submitted</th>
-         <th></th>
+          <th>Put in hold by:</th>
+         <th>Picked up by:</th>
       </tr>
    </thead>
    <tbody>
@@ -64,11 +75,21 @@
 
              </div></td>
          <td>9a268036	</td>
-         <td>Jill Evans</td>
          <td> <span class="nhsuk-tag--blue"> Potential fraud</td>
          <td>Auto uplift, doc issue</td>
          <td>6d 2h 5m</td>
-         <td role="cell" class="nhsuk-table__cell" style="color: #808080"> Picked up by: 442567493823</td>
+         <td>254467493823</td>
+         <td>
+
+    <select class="nhsuk-select" id="select-1" name="select-1" style="margin-top: 0px; ">
+    <option value="1">Joanne Smith (938442567423</option>
+    <option value="2">246728366816</option>
+    <option value="3">936452819464</option>
+    <option value="4">498562914850</option>
+    <option value="5">628474651835</option>
+    </select>
+         
+         </td>
         <td><a class="remove-row pull-right" targetdiv="" data-id="1" href="javascript: void(0)"><i class="glyphicon glyphicon-trash"></i></a></td>
       </tr>
 
@@ -84,11 +105,19 @@
 
              </div></td>
          <td>c8275o2	</td>
-         <td>Claire Costea</td>
          <td> <span class="nhsuk-tag--red"> PDS review</td>
          <td>Missing middle name, post codes don't match	</td>
          <td>5d 4h 0m</td>
-         <td role="cell" class="nhsuk-table__cell" style="color: #808080"> Picked up by: 442567493823</td>
+         <td>749442563823</td>
+        <td>
+    <select class="nhsuk-select" id="select-1" name="select-1" style="margin-top: 0px; ">
+    <option value="1">246728366816</option>
+    <option value="2">938442567423</option>
+    <option value="3">936452819464</option>
+    <option value="4">498562914850</option>
+    <option value="5">628474651835</option>
+    </select>
+         </td>
         <td><a class="remove-row pull-right" targetdiv="" data-id="2" href="javascript: void(0)"><i class="glyphicon glyphicon-trash"></i></a></td>
       </tr>
 
@@ -101,12 +130,21 @@
               </label>
             </div> 
 
-             </div></td>         <td>7o63848a	</td>
-         <td>Timothy Farthing	</td>
+             </div></td>         
+        <td>7o63848a	</td>
          <td> <span class="nhsuk-tag--yellow">Potential safeguarding</td>
          <td>Missing middle name, post codes don't match	</td>
          <td>2d 0h 9m</td>
-         <td role="cell" class="nhsuk-table__cell" style="color: #808080"> Picked up by: 442567493823</td>
+          <td>256447493823</td>
+                <td>
+    <select class="nhsuk-select" id="select-1" name="select-1" style="margin-top: 0px; ">
+    <option value="1">498562914850</option>
+    <option value="2">938442567423</option>
+    <option value="3">936452819464</option>
+    <option value="4">246728366816</option>
+    <option value="5">628474651835</option>
+    </select>
+         </td>
         <td><a class="remove-row pull-right" targetdiv="" data-id="3" href="javascript: void(0)"><i class="glyphicon glyphicon-trash"></i></a></td>
       </tr>
 
@@ -121,11 +159,18 @@
 
             </div></td>
           <td>7d8299a	</td>
-         <td>Jack West</td>
          <td> <span class="nhsuk-tag--green">Automation issue</td>
          <td>Automation expiry date in 10 months	</td>
          <td>4d 9h 5m	</td>
-         <td role="cell" class="nhsuk-table__cell" style="color: #808080"> Picked up by: 442567493823</td>
+        <td>449342567823</td>
+         <td>   <select class="nhsuk-select" id="select-1" name="select-1" style="margin-top: 0px; ">
+    <option value="1">498562914850</option>
+    <option value="2">938442567423</option>
+    <option value="3">936452819464</option>
+    <option value="4">498562914850</option>
+    <option value="5">628474651835</option>
+    </select>
+         </td></td>
         <td><a class="remove-row pull-right" targetdiv="" data-id="4" href="javascript: void(0)"><i class="glyphicon glyphicon-trash"></i></a></td>
       </tr>
 
@@ -138,12 +183,20 @@
               </label>
             </div> 
 
-</div></td>         <td>5760d622		</td>
-         <td>Ian Hutton</td>
+</div></td>
+         <td>5760d622	</td>
          <td> <span class="nhsuk-tag--yellow">Potential safeguarding</td>
          <td>Auto uplift, doc issue</td>
          <td>3d 2h 2m</td>
-         <td role="cell" class="nhsuk-table__cell" style="color: #808080"> Picked up by: 442567493823</td>
+         <td>567493823442</td>
+         <td>   <select class="nhsuk-select" id="select-1" name="select-1" style="margin-top: 0px; ">
+    <option value="1">628474651835</option>
+    <option value="2">938442567423</option>
+    <option value="3">936452819464</option>
+    <option value="4">498562914850</option>
+    <option value="5">628474651835</option>
+    </select>
+         </td>
         <td><a class="remove-row pull-right" targetdiv="" data-id="5" href="javascript: void(0)"><i class="glyphicon glyphicon-trash"></i></a></td>
       </tr>
 
@@ -154,4 +207,56 @@
    </tbody>
 </table>
 
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <div class="popup" onclick="myFunction()">popup1
+      <span class="popuptext" id="myPopup1">A Simple Popup1!</span>
+    </div><br><br>
+    <div class="popup" onclick="myFunction()">popup2
+      <span class="popuptext" id="myPopup2">A Simple Popup2!</span>
+    </div><br><br>
+    <div class="popup" onclick="myFunction()">popup3
+      <span class="popuptext" id="myPopup3">A Simple Popup3!</span>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+addSlideoutListener()
+
+    setTimeout(function () {
+        document.getElementById('slideout-sendback-value_tab_spinner').style.display = 'none'
+    }, 4000)
+
+    setTimeout(function () {
+        document.getElementById('slideout-sendback-value_tab_value').style.display = 'block'
+    }, 4000)
+
+
+    function addSlideoutListener() {
+        if (document.getElementById('slideout-sendback__button')) {
+            var selects = document.getElementById('slideout-sendback__button')
+            selects.addEventListener('click', function (event) {
+                if (document.getElementById('slideout-sendback').getAttribute('data-status') === 'closed') {
+                    console.log('slideout-sendback')
+                    document.getElementById('slideout-sendback').setAttribute('data-status', 'open')
+                    document.getElementById('slideout-sendback_inner').setAttribute('data-status', 'open')
+                } else {
+                    document.getElementById('slideout-sendback').setAttribute('data-status', 'closed')
+                    document.getElementById('slideout-sendback_inner').setAttribute('data-status', 'closed')
+                }
+            })
+        }
+    }
+
+    function myFunction() {
+    var popup = document.getElementById("myPopup2"); //you can easily switch this with JS
+    popup.classList.toggle("show");
+}
+
+    </script>
+
+    
 {% endblock %}

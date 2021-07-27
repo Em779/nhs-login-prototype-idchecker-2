@@ -6152,6 +6152,9 @@ b {
 .nhsuk-width-container {
   max-width: 1100px; }
 
+.nhsuk-width-container-wide {
+  max-width: 1500px; }
+
 .idcheck-image-container {
   position: relative;
   overflow: hidden;
@@ -7440,3 +7443,36 @@ strong.govuk-tag.concept, strong.govuk-tag.in-progress {
   top: 0;
   opacity: 0;
   cursor: pointer; }
+
+strong.nhsuk-tag.tag-green-tag {
+  background: #007f3b;
+  padding: 2px 12px 5px 12px;
+  border-radius: 6px;
+  border-color: #007f3b;
+  font: small-caption;
+  font-variant-caps: all-small-caps;
+  font-weight: 600;
+  font-size: 16px;
+  color: white; }
+
+strong.nhsuk-tag.tag-grey-tag {
+  background: #768D99;
+  padding: 2px 12px 5px 12px;
+  border-radius: 6px;
+  border-color: #768D99;
+  font: small-caption;
+  font-variant-caps: all-small-caps;
+  font-weight: 600;
+  font-size: 16px;
+  color: white; }
+
+strong.nhsuk-tag.tag-red-tag {
+  background: #d5281b;
+  padding: 2px 12px 5px 12px;
+  border-radius: 6px;
+  border-color: #d5281b;
+  font: small-caption;
+  font-variant-caps: all-small-caps;
+  font-weight: 600;
+  font-size: 16px;
+  color: white; }

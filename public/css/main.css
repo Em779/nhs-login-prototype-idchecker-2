@@ -7445,15 +7445,15 @@ strong.govuk-tag.concept, strong.govuk-tag.in-progress {
   cursor: pointer; }
 
 strong.nhsuk-tag.tag-green-tag {
-  background: #007f3b;
+  background: #98e481;
   padding: 2px 12px 5px 12px;
   border-radius: 6px;
-  border-color: #007f3b;
+  border-color: #b3f39f;
   font: small-caption;
   font-variant-caps: all-small-caps;
   font-weight: 600;
-  font-size: 16px;
-  color: white; }
+  font-size: 22px;
+  color: black; }
 
 strong.nhsuk-tag.tag-grey-tag {
   background: #768D99;
@@ -7463,16 +7463,16 @@ strong.nhsuk-tag.tag-grey-tag {
   font: small-caption;
   font-variant-caps: all-small-caps;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 22px;
   color: white; }
 
-strong.nhsuk-tag.tag-red-tag {
-  background: #d5281b;
+strong.nhsuk-tag.tag-blue-tag {
+  background: #15BEF0;
   padding: 2px 12px 5px 12px;
   border-radius: 6px;
-  border-color: #d5281b;
+  border-color: #15BEF0;
   font: small-caption;
   font-variant-caps: all-small-caps;
   font-weight: 600;
-  font-size: 16px;
-  color: white; }
+  font-size: 22px;
+  color: black; }

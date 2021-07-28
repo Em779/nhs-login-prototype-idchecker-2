@@ -189,33 +189,33 @@ cursor: pointer;}
 //tags
 strong.nhsuk-tag {
   
-  &.tag-green-tag {
-  background: #98e481;
+  &.unopened {
+  background: #80A392;
   padding: 2px 12px 5px 12px;
   border-radius: 6px;
-  border-color:#b3f39f;
+  border-color:#80A392;
   font: small-caption;
   font-variant-caps: all-small-caps;
   font-weight: 600;
   font-size: 22px;
   color: rgb(0, 0, 0);
   }
-  &.tag-grey-tag {
-    background: #768D99;
+  &.with-checker {
+    background: #768692;
     padding: 2px 12px 5px 12px;
     border-radius: 6px;
-    border-color:#768D99;
+    border-color:#768692;
     font: small-caption;
     font-variant-caps: all-small-caps;
     font-weight: 600;
     font-size: 22px;
     color: rgb(255, 255, 255);
     }
-  &.tag-blue-tag {
-    background: #15BEF0;
+  &.with-me {
+    background: #41B6E6;
     padding: 2px 12px 5px 12px;
     border-radius: 6px;
-    border-color:#15BEF0;
+    border-color:#41B6E6;
     font: small-caption;
     font-variant-caps: all-small-caps;
     font-weight: 600;

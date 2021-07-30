@@ -190,15 +190,15 @@ cursor: pointer;}
 strong.nhsuk-tag {
   
   &.unopened {
-  background: #80A392;
+  background: #007f3b;
   padding: 2px 12px 5px 12px;
   border-radius: 6px;
-  border-color:#80A392;
+  border-color:#007f3b;
   font: small-caption;
   font-variant-caps: all-small-caps;
   font-weight: 600;
   font-size: 22px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   }
   &.with-checker {
     background: #768692;
@@ -223,3 +223,13 @@ strong.nhsuk-tag {
     color: rgb(0, 0, 0);
     }
  }
+
+ //deleting table rows
+ .move{
+  border: none;
+  border-radius: 15px;
+  background-color: dodgerblue;
+}
+table{
+  margin-top: 4em;
+}

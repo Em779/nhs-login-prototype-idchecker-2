@@ -1,0 +1,51 @@
+
+{% extends 'layout-wide.html' %}
+
+{% block content %}
+
+
+<div class="row">
+  <div class="large-12 columns">
+   <table class="remove-items">
+     <thead>
+       <tr>
+         <th>Remove items</th>
+         <th><input type="checkbox" class="all"> All</th>
+       </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>One</td>
+           <td><input type="checkbox"></td>
+         </tr>
+           <tr>
+           <td>Two</td>
+           <td><input type="checkbox"></td>
+         </tr>
+           <tr>
+           <td>Three</td>
+           <td><input type="checkbox"></td>
+         </tr>
+           <tr>
+           <td>Four</td>
+           <td><input type="checkbox"></td>
+         </tr>
+         
+     </tbody>
+    </table>
+  <button class="move">Remove Items</button>
+  </div>
+</div>
+
+
+<script>
+$(".button").on("click", function() {
+ $('input:checked').not('.all').parents("tr").remove();
+});
+$('.all').on('click',function(){
+  var $inputs = $('table').find('input');
+  $inputs.prop('checked', 'checked');
+});
+</script>
+    
+{% endblock %}

@@ -7148,8 +7148,8 @@ details.dev-mode summary, details.dev-mode ol {
 #slideout-sendback,
 #slideout-sendback-sendback-value {
   position: fixed;
-  top: 40px;
-  right: 0;
+  top: 100px;
+  right: 140px;
   width: 32px;
   padding: 0 0 12px;
   margin: 0;
@@ -7179,9 +7179,9 @@ details.dev-mode summary, details.dev-mode ol {
 #slideout-sendback_inner,
 #slideout-sendback-value_inner {
   position: fixed;
-  top: 40px;
+  top: 100px;
   right: -300px;
-  background: #330072;
+  background: #007f3b;
   width: 300px;
   padding: 25px;
   margin: 0;
@@ -7445,15 +7445,15 @@ strong.govuk-tag.concept, strong.govuk-tag.in-progress {
   cursor: pointer; }
 
 strong.nhsuk-tag.unopened {
-  background: #80A392;
+  background: #007f3b;
   padding: 2px 12px 5px 12px;
   border-radius: 6px;
-  border-color: #80A392;
+  border-color: #007f3b;
   font: small-caption;
   font-variant-caps: all-small-caps;
   font-weight: 600;
   font-size: 22px;
-  color: black; }
+  color: white; }
 
 strong.nhsuk-tag.with-checker {
   background: #768692;
@@ -7476,3 +7476,11 @@ strong.nhsuk-tag.with-me {
   font-weight: 600;
   font-size: 22px;
   color: black; }
+
+.move {
+  border: none;
+  border-radius: 15px;
+  background-color: dodgerblue; }
+
+table {
+  margin-top: 4em; }

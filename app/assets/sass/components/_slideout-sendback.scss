@@ -1,8 +1,8 @@
 #slideout-sendback,
 #slideout-sendback-sendback-value {
   position: fixed;
-  top: 40px;
-  right: 0;
+  top: 100px;
+  right: 140px;
   width: 32px;
   padding: 0 0 12px;
   margin: 0;
@@ -38,9 +38,9 @@
 #slideout-sendback_inner,
 #slideout-sendback-value_inner {
   position: fixed;
-  top: 40px;
+  top: 100px;
   right: -300px;
-  background: #330072;
+  background: #007f3b;
   width: 300px;
   padding: 25px;
   margin: 0;
